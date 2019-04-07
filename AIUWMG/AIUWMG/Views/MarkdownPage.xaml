@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AIUWMG.Views"
+             x:Class="AIUWMG.Views.MarkdownPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit" Clicked="OnEditClicked" Icon="ic_passxyz_edit.png"/>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout Padding="5, 5, 5, 5">
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="titleField"
+                       FontAttributes="Bold"
+                       FontSize="Default"
+                       LineBreakMode="WordWrap"
+                       VerticalOptions="StartAndExpand"
+                       HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+
+            <local:MarkdownView x:Name="pxNotesView"></local:MarkdownView>
+
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
