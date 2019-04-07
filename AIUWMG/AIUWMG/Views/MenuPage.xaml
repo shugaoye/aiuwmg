@@ -2,10 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AIUWMG.Views.MenuPage"
+			 Icon="hamburger.png"
              Title="Menu">
-    <StackLayout VerticalOptions="FillAndExpand">
+    <StackLayout>
         <ListView x:Name="ListViewMenu"
+              SeparatorVisibility="None"
                     HasUnevenRows="True">
+            <ListView.Header>
+                <Grid BackgroundColor="#03A9F4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="75"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="aiuwmg_banner.png" Grid.Row="0" Grid.Column="0" />
+                </Grid>
+            </ListView.Header>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
