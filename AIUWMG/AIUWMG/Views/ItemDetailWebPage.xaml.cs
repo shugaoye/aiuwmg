@@ -11,11 +11,11 @@ using AIUWMG.ViewModels;
 namespace AIUWMG.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MarkdownPage : ContentPage
+	public partial class ItemDetailWebPage : ContentPage
 	{
         ItemDetailViewModel viewModel;
 
-        public MarkdownPage()
+        public ItemDetailWebPage()
 		{
 			InitializeComponent ();
 
@@ -27,18 +27,21 @@ namespace AIUWMG.Views
 
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
-            //titleField.Text = "";
-            //pxNotesView.Markdown = "";
-            //pxNotesView.VerticalOptions = LayoutOptions.FillAndExpand;
+            titleField.Text = "";
+            pxNotesView.Markdown = "";
+            pxNotesView.VerticalOptions = LayoutOptions.FillAndExpand;
         }
 
-        public MarkdownPage(ItemDetailViewModel viewModel)
+        public ItemDetailWebPage(ItemDetailViewModel viewModel)
         {
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
+            titleField.Text = viewModel.Item.Text;
+            pxNotesView.Markdown = viewModel.GetMarkdownText();
+            pxNotesView.VerticalOptions = LayoutOptions.FillAndExpand;
+            pxNotesView.JsonData = viewModel.ToString();
 
-            Debug.WriteLine("MarkdownPage(assigning a new ItemDetailViewModel ...)");
         }
 
         protected override void OnAppearing()

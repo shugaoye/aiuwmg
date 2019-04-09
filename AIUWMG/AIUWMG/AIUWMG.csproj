@@ -20,4 +20,10 @@
   <ItemGroup>
     <Folder Include="Utils\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ItemDetailWebPage.xaml.cs">
+      <DependentUpon>ItemDetailWebPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+
 using Xamarin.Forms;
 using CommonMark;
 using CommonMark.Syntax;
@@ -8,13 +10,13 @@ using PassXYZ.Utils;
 namespace AIUWMG.Views
 {
     /// <summary>
-    /// A View that presents Markdown content.
+    /// A View that presents Item details in WebView.
     /// </summary>
-    public class MarkdownView : WebView
+    public class ItemDetailWebView : WebView
     {
         private readonly string _baseUrl;
 
-		public MarkdownView() : this(LinkRenderingOption.Underline)
+		public ItemDetailWebView() : this(LinkRenderingOption.Underline)
 		{
 
 		}
@@ -23,7 +25,7 @@ namespace AIUWMG.Views
 		/// Creates a new MarkdownView
 		/// </summary>
 		/// <param name="linksOption">Tells the view how to render links.</param>
-		public MarkdownView(LinkRenderingOption linksOption)
+		public ItemDetailWebView(LinkRenderingOption linksOption)
         {
             var baseUrlResolver = DependencyService.Get<IShare>();
             if (baseUrlResolver != null)
@@ -45,7 +47,7 @@ namespace AIUWMG.Views
         /// Backing store for the MarkdownView.Stylesheet property
         /// </summary>
         public static readonly BindableProperty StylesheetProperty =
-            BindableProperty.Create<MarkdownView, string>(
+            BindableProperty.Create<ItemDetailWebView, string>(
                 p => p.Stylesheet, "");
 
         /// <summary>
@@ -65,7 +67,7 @@ namespace AIUWMG.Views
         /// Backing storage for the MarkdownView.Markdown property
         /// </summary>
         public static readonly BindableProperty MarkdownProperty =
-            BindableProperty.Create<MarkdownView, string>(
+            BindableProperty.Create<ItemDetailWebView, string>(
                 p => p.Markdown, "");
 
         /// <summary>
@@ -79,6 +81,17 @@ namespace AIUWMG.Views
                 SetValue(MarkdownProperty, value);
                 SetWebViewSourceFromMarkdown();
             }
+        }
+
+        private string jsonData;
+
+        /// <summary>
+        /// Key/Value pairs as JSON data
+        /// </summary>
+        public string JsonData
+        {
+            get { return jsonData; }
+            set { jsonData = value; Debug.WriteLine($"set JSON data: {jsonData}"); }
         }
 
         private void SetWebViewSourceFromMarkdown()
