@@ -19,8 +19,8 @@ namespace AIUWMG.Views
 
             Item = new Item
             {
-                Text = "Item name",
-                Description = "This is an item description."
+                Title = "Item name",
+                Notes = "This is an item description."
             };
 
             BindingContext = this;

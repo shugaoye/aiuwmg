@@ -21,8 +21,8 @@ namespace AIUWMG.Views
 
             var item = new Item
             {
-                Text = "Notes",
-                Description = "This is a secure notes."
+                Title = "Notes",
+                Notes = "This is a secure notes."
             };
 
             viewModel = new ItemDetailViewModel(item);
@@ -37,10 +37,10 @@ namespace AIUWMG.Views
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
-            titleField.Text = viewModel.Item.Text;
+            titleField.Text = viewModel.Item.Title;
             pxNotesView.Markdown = viewModel.GetMarkdownText();
             pxNotesView.VerticalOptions = LayoutOptions.FillAndExpand;
-            pxNotesView.JsonData = viewModel.ToString();
+            pxNotesView.JsonData = viewModel.Item.ToString();
 
         }
 

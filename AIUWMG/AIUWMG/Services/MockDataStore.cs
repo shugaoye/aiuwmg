@@ -15,12 +15,12 @@ namespace AIUWMG.Services
             items = new List<Item>();
             var mockItems = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Text = "First item", Description="## The fist item. \n\n**This** is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Text = "Sixth item", Description="This is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Google", Username = "test user", Password = "12345", Url = "http://www.google.com", Notes="## The fist item. \n\n**This** is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Facebook", Notes="AIUWMG" },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Amazon", Notes="This is a hidden field." },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Tencent", Notes="http://github.com" },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Alibaba", Notes="1234567890" },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Baidu", Notes="4321" },
             };
 
             foreach (var item in mockItems)

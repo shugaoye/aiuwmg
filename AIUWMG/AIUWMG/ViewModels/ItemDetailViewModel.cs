@@ -1,28 +1,24 @@
 ﻿using System;
+using System.Diagnostics;
 
-using Newtonsoft.Json;
+using PassXYZ.Utils;
 
 using AIUWMG.Models;
 
 namespace AIUWMG.ViewModels
 {
+
     public class ItemDetailViewModel : BaseViewModel
     {
         public Item Item { get; set; }
+        public JsonData<JsonAttachment> Attachment { get; set; }
+
         public ItemDetailViewModel(Item item = null)
         {
-            Title = item?.Text;
+            Title = item?.Title;
             Item = item;
         }
 
-        /// <summary>
-        /// Return the object Item as JSON data
-        /// </summary>
-        /// <returns></returns>
-        public override string ToString()
-        {
-            return JsonConvert.SerializeObject(Item);
-        }
 
         /// <summary>
         /// Return the Markdown text
@@ -30,7 +26,7 @@ namespace AIUWMG.ViewModels
         /// <returns></returns>
         public string GetMarkdownText()
         {
-            return Item.Description;
+            return Item.Notes;
         }
     }
 }
