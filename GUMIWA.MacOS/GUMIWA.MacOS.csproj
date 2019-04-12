@@ -7,8 +7,8 @@
     <ProjectGuid>{D0094933-1406-4877-921B-A8A4D3B5B784}</ProjectGuid>
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AIUWMG.MacOS</RootNamespace>
-    <AssemblyName>AIUWMG.MacOS</AssemblyName>
+    <RootNamespace>GUMIWA.MacOS</RootNamespace>
+    <AssemblyName>GUMIWA.MacOS</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
@@ -116,9 +116,9 @@
     <InterfaceDefinition Include="Main.storyboard" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AIUWMG\AIUWMG\AIUWMG.csproj">
+    <ProjectReference Include="..\GUMIWA\GUMIWA\GUMIWA.csproj">
       <Project>{87285AF3-85D0-4ACE-B148-9321DDD3D0E0}</Project>
-      <Name>AIUWMG</Name>
+      <Name>GUMIWA</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />

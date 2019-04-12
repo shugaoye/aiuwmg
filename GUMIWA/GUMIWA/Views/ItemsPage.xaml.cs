@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using AIUWMG.Models;
-using AIUWMG.Views;
-using AIUWMG.ViewModels;
+using GUMIWA.Models;
+using GUMIWA.Views;
+using GUMIWA.ViewModels;
 
-namespace AIUWMG.Views
+namespace GUMIWA.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ItemsPage : ContentPage

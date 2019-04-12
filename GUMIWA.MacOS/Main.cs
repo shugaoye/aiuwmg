@@ -1,6 +1,6 @@
 ﻿using AppKit;
 
-namespace AIUWMG.MacOS
+namespace GUMIWA.MacOS
 {
     static class MainClass
     {

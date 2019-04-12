@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace AIUWMG.Services
+namespace GUMIWA.Services
 {
     public interface IDataStore<T>
     {

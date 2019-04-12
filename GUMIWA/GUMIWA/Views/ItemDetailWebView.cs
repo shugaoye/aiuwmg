@@ -7,7 +7,7 @@ using CommonMark.Syntax;
 
 using PassXYZ.Utils;
 
-namespace AIUWMG.Views
+namespace GUMIWA.Views
 {
     /// <summary>
     /// A View that presents Item details in WebView.

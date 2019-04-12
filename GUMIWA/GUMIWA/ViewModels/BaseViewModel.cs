@@ -5,10 +5,10 @@ using System.Runtime.CompilerServices;
 
 using Xamarin.Forms;
 
-using AIUWMG.Models;
-using AIUWMG.Services;
+using GUMIWA.Models;
+using GUMIWA.Services;
 
-namespace AIUWMG.ViewModels
+namespace GUMIWA.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

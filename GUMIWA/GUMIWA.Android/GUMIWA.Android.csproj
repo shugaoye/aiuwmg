@@ -7,8 +7,8 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{9AA2D3C6-3393-45F1-8E7C-5A9901728795}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>AIUWMG.Droid</RootNamespace>
-    <AssemblyName>AIUWMG.Android</AssemblyName>
+    <RootNamespace>GUMIWA.Droid</RootNamespace>
+    <AssemblyName>GUMIWA.Android</AssemblyName>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -98,9 +98,9 @@
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AIUWMG\AIUWMG.csproj">
+    <ProjectReference Include="..\GUMIWA\GUMIWA.csproj">
       <Project>{87285AF3-85D0-4ACE-B148-9321DDD3D0E0}</Project>
-      <Name>AIUWMG</Name>
+      <Name>GUMIWA</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

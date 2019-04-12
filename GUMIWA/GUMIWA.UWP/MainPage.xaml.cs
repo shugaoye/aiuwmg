@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace AIUWMG.UWP
+namespace GUMIWA.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace AIUWMG.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new AIUWMG.App());
+            LoadApplication(new GUMIWA.App());
         }
     }
 }

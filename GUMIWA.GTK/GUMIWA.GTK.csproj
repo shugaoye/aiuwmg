@@ -8,8 +8,8 @@
     <ProjectGuid>{32B7D4D3-1471-4EA8-BC9B-D159DB33FAB8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AIUWMG.GTK</RootNamespace>
-    <AssemblyName>AIUWMG.GTK</AssemblyName>
+    <RootNamespace>GUMIWA.GTK</RootNamespace>
+    <AssemblyName>GUMIWA.GTK</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -99,9 +99,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AIUWMG\AIUWMG\AIUWMG.csproj">
+    <ProjectReference Include="..\GUMIWA\GUMIWA\GUMIWA.csproj">
       <Project>{87285af3-85d0-4ace-b148-9321ddd3d0e0}</Project>
-      <Name>AIUWMG</Name>
+      <Name>GUMIWA</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

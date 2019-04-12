@@ -12,10 +12,10 @@ using XamStorage;
 using Unosquare.Labs.EmbedIO;
 using Unosquare.Labs.EmbedIO.Modules;
 
-using AIUWMG.Views;
+using GUMIWA.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
-namespace AIUWMG
+namespace GUMIWA
 {
     public partial class App : Application
     {

@@ -4,9 +4,9 @@ using Foundation;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.MacOS;
 
-using AIUWMG;
+using GUMIWA;
 
-namespace AIUWMG.MacOS
+namespace GUMIWA.MacOS
 {
     [Register("AppDelegate")]
     public class AppDelegate : FormsApplicationDelegate

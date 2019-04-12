@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AIUWMG.Models
+namespace GUMIWA.Models
 {
     public enum MenuItemType
     {

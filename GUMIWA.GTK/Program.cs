@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.GTK;
 
-namespace AIUWMG.GTK
+namespace GUMIWA.GTK
 {
     class MainClass
     {

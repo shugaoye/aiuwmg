@@ -4,7 +4,7 @@ using System.Reflection;
 
 using PassXYZ.Utils;
 
-namespace AIUWMG.Models
+namespace GUMIWA.Models
 {
     public class Item
     {

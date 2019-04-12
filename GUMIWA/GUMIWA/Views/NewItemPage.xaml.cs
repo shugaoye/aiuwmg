@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using AIUWMG.Models;
+using GUMIWA.Models;
 
-namespace AIUWMG.Views
+namespace GUMIWA.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NewItemPage : ContentPage

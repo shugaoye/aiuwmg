@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-using AIUWMG.Models;
-using AIUWMG.Views;
+using GUMIWA.Models;
+using GUMIWA.Views;
 
-namespace AIUWMG.ViewModels
+namespace GUMIWA.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {

@@ -3,7 +3,7 @@
 using AppKit;
 using Foundation;
 
-namespace AIUWMG.MacOS
+namespace GUMIWA.MacOS
 {
     public partial class ViewController : NSViewController
     {

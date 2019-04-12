@@ -5,10 +5,10 @@ using System.Diagnostics;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-using AIUWMG.Models;
-using AIUWMG.ViewModels;
+using GUMIWA.Models;
+using GUMIWA.ViewModels;
 
-namespace AIUWMG.Views
+namespace GUMIWA.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ItemDetailWebPage : ContentPage

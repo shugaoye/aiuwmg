@@ -1,11 +1,11 @@
-﻿using AIUWMG.Models;
+﻿using GUMIWA.Models;
 using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AIUWMG.Views
+namespace GUMIWA.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPage : ContentPage

@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AIUWMG.WPF")]
+[assembly: AssemblyTitle("GUMIWA.WPF")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("EPAM Systems")]
-[assembly: AssemblyProduct("AIUWMG.WPF")]
-[assembly: AssemblyCopyright("Copyright © EPAM Systems 2019")]
+[assembly: AssemblyCompany("PassXYZ")]
+[assembly: AssemblyProduct("GUMIWA.WPF")]
+[assembly: AssemblyCopyright("Copyright © PassXYZ Systems 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

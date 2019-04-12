@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using AIUWMG.Models;
+using GUMIWA.Models;
 
-namespace AIUWMG.Services
+namespace GUMIWA.Services
 {
     public class MockDataStore : IDataStore<Item>
     {
@@ -16,7 +16,7 @@ namespace AIUWMG.Services
             var mockItems = new List<Item>
             {
                 new Item { Id = Guid.NewGuid().ToString(), Title = "Google", Username = "test user", Password = "12345", Url = "http://www.google.com", Notes="## The fist item. \n\n**This** is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Facebook", Notes="AIUWMG" },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Facebook", Notes="GUMIWA" },
                 new Item { Id = Guid.NewGuid().ToString(), Title = "Amazon", Notes="This is a hidden field." },
                 new Item { Id = Guid.NewGuid().ToString(), Title = "Tencent", Notes="http://github.com" },
                 new Item { Id = Guid.NewGuid().ToString(), Title = "Alibaba", Notes="1234567890" },

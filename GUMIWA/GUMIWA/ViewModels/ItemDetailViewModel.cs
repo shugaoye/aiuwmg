@@ -3,9 +3,9 @@ using System.Diagnostics;
 
 using PassXYZ.Utils;
 
-using AIUWMG.Models;
+using GUMIWA.Models;
 
-namespace AIUWMG.ViewModels
+namespace GUMIWA.ViewModels
 {
 
     public class ItemDetailViewModel : BaseViewModel

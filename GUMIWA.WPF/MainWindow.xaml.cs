@@ -1,7 +1,7 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Platform.WPF;
 
-namespace AIUWMG.WPF
+namespace GUMIWA.WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -13,7 +13,7 @@ namespace AIUWMG.WPF
             InitializeComponent();
 
             Forms.Init();
-            LoadApplication(new AIUWMG.App());
+            LoadApplication(new GUMIWA.App());
         }
     }
 }

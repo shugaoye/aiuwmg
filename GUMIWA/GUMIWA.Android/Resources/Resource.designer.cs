@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("AIUWMG.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("GUMIWA.Droid.Resource", IsApplication=true)]
 
-namespace AIUWMG.Droid
+namespace GUMIWA.Droid
 {
 	
 	
@@ -26,9 +26,9 @@ namespace AIUWMG.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::AIUWMG.Droid.Resource.Attribute.actionBarSize;
-			global::XamStorage.Resource.String.ApplicationName = global::AIUWMG.Droid.Resource.String.ApplicationName;
-			global::XamStorage.Resource.String.Hello = global::AIUWMG.Droid.Resource.String.Hello;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::GUMIWA.Droid.Resource.Attribute.actionBarSize;
+			global::XamStorage.Resource.String.ApplicationName = global::GUMIWA.Droid.Resource.String.ApplicationName;
+			global::XamStorage.Resource.String.Hello = global::GUMIWA.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Animation

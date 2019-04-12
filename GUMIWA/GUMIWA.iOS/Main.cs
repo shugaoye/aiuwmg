@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace AIUWMG.iOS
+namespace GUMIWA.iOS
 {
     public class Application
     {
