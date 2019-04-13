@@ -17,7 +17,7 @@
                         <RowDefinition Height="75"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <Image Source="aiuwmg_banner.png" Grid.Row="0" Grid.Column="0" />
+                    <Image Source="gumiwa_banner.png" Grid.Row="0" Grid.Column="0" />
                 </Grid>
             </ListView.Header>
             <ListView.ItemTemplate>

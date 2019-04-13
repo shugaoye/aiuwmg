@@ -149,10 +149,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\aiuwmg_banner.png" />
+    <BundleResource Include="Resources\gumiwa_banner.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\aiuwmg_banner%402x.png" />
+    <BundleResource Include="Resources\gumiwa_banner%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\hamburger.png" />
