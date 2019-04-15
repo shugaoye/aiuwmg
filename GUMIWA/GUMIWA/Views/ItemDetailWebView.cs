@@ -2,8 +2,11 @@
 using System.Diagnostics;
 
 using Xamarin.Forms;
+
+#if !COMMONMARK_JS
 using CommonMark;
 using CommonMark.Syntax;
+#endif // COMMONMARK_JS
 
 using PassXYZ.Utils;
 
@@ -14,6 +17,7 @@ namespace GUMIWA.Views
     /// </summary>
     public class ItemDetailWebView : WebView
     {
+#if !COMMONMARK_JS
         private readonly string _baseUrl;
 
 		public ItemDetailWebView() : this(LinkRenderingOption.Underline)
@@ -42,6 +46,7 @@ namespace GUMIWA.Views
                         new NoneLinksHtmlFormatter(output, settings).WriteDocument(doc);
 
         }
+#endif // COMMONMARK_JS
 
         /// <summary>
         /// Backing store for the MarkdownView.Stylesheet property
@@ -59,7 +64,9 @@ namespace GUMIWA.Views
             set
             {
                 SetValue(StylesheetProperty, value);
+#if !COMMONMARK_JS
                 SetStylesheet();
+#endif // COMMONMARK_JS
             }
         }
 
@@ -79,7 +86,9 @@ namespace GUMIWA.Views
             set
             {
                 SetValue(MarkdownProperty, value);
+#if !COMMONMARK_JS
                 SetWebViewSourceFromMarkdown();
+#endif // COMMONMARK_JS
             }
         }
 
@@ -94,6 +103,7 @@ namespace GUMIWA.Views
             set { jsonData = value; Debug.WriteLine($"set JSON data: {jsonData}"); }
         }
 
+#if !COMMONMARK_JS
         private void SetWebViewSourceFromMarkdown()
         {
             string head = @"
@@ -192,6 +202,7 @@ namespace GUMIWA.Views
                 base.WriteInline(inline, isOpening, isClosing, out ignoreChildNodes);
             }
         }
+#endif // COMMONMARK_JS
     }
     // Add new class here
 }
