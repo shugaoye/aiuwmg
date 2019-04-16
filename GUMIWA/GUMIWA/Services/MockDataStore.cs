@@ -15,12 +15,12 @@ namespace GUMIWA.Services
             items = new List<Item>();
             var mockItems = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Google", Username = "test user", Password = "12345", Url = "http://www.google.com", Notes="## The fist item. \n\n**This** is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Facebook", Notes="GUMIWA" },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Amazon", Notes="This is a hidden field." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Tencent", Notes="http://github.com" },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Alibaba", Notes="1234567890" },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Baidu", Notes="4321" },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Google", Username = "test user", Password = "12345", Url = "http://www.google.com", Notes="## The first item. \n\n**This** is an item description." },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Facebook", Notes="GUMIWA\n\nThe **Facebook** account is not available." },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Amazon", Notes="GUMIWA\n\nThis **is** a hidden field." },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Tencent", Notes="GUMIWA\n\nPlease visit [Github](http://github.com)" },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Alibaba", Notes="GUMIWA\n\n![KeePass](https://keepass.info/images/icons/keepass_512x512.png)" },
+                new Item { Id = Guid.NewGuid().ToString(), Title = "Baidu", Notes="GUMIWA\n\n![KeePass banner](https://keepass.info/images/icons/keepass_322x132.png)" },
             };
 
             foreach (var item in mockItems)
