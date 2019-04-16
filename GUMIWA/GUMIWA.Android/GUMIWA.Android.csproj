@@ -106,5 +106,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\gumiwa_banner.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bundle.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="entryDetails">
+<head>
+    <title>entryDetails</title>
+    <script>
+        var model = /*GUMIWA_JsonData*/ {
+            title: "PassXYZ",
+            items: [{ key: "Username", value: "PassXYZ", isProtected: false, isHidden: false },
+                { key: "Password", value: "87654321", isProtected: true, isHidden: true },
+                { key: "Mobile", value: "123456789", isProtected: false, isHidden: false },
+                { key: "PIN", value: "1234", isProtected: true, isHidden: true },
+                { key: "Url", value: "http://passxyz.github.io", isProtected: false, isHidden: false }]
+        };
+    </script>
+    <script src="bundle.js"></script>
+</head>
+<body ng-controller="DetailsCtrl">
+    <div class="container">
+            <h3>
+                    {{details.title}}
+                    <!--
+                    <span class="label label-default" ng-class="warningLevel()"
+                          ng-hide="incompleteCount() == 0">
+                        {{incompleteCount()}}
+                    </span>
+                    -->
+            </h3>
+            <table class="table table-striped">
+            <tbody>
+                    <tr ng-repeat=
+                        "item in details.items">
+                            <td><b>{{item.key}}</b></td>
+                            <td ng-hide="item.isHidden">{{item.value}}</td>
+                            <td ng-show="item.isHidden"><input type="password" ng-model="item.value" /></td>
+                            <td ng-show="item.isProtected"><input type="checkbox" ng-model="item.isHidden" /></td>
+                            <td ng-hide="item.isProtected"></td>
+                    </tr>
+            </tbody>
+        </table>
+
+        <hr>
+        <!--GUMIWA_Notes-->
+        <hr>
+        <!--GUMIWA_Attachments-->
+        Place Attachments here.
+        <!-- 
+        <div class="checkbox-inline">
+            <label><input type="checkbox" ng_model="showComplete" value="true" checked/>Show Password</label>
+        </div>
+        -->
+    </div>
+
+</body>
+</html>
