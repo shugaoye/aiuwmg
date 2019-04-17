@@ -38,10 +38,9 @@ namespace GUMIWA.Views
 
             BindingContext = this.viewModel = viewModel;
             titleField.Text = viewModel.Item.Title;
-            pxNotesView.Markdown = viewModel.GetMarkdownText();
             pxNotesView.VerticalOptions = LayoutOptions.FillAndExpand;
             pxNotesView.JsonData = viewModel.Item.ToString();
-
+            pxNotesView.Markdown = viewModel.GetMarkdownText();
         }
 
         protected override void OnAppearing()

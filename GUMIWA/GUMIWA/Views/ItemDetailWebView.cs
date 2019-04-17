@@ -21,6 +21,10 @@ namespace GUMIWA.Views
     /// </summary>
     public class ItemDetailWebView : WebView
     {
+        const string GUMIWA_NOTES = "< !--GUMIWA_Notes-- >";
+        const string GUMIWA_JSONDATA = "//GUMIWA_JsonData";
+        const string GUMIWA_ATTACHMENT = "<!--GUMIWA_Attachments-->";
+
 #if !COMMONMARK_JS
         private readonly string _baseUrl;
 
@@ -110,35 +114,30 @@ namespace GUMIWA.Views
 #if !COMMONMARK_JS
         private void SetWebViewSourceFromMarkdown()
         {
-            /*
-            string head = @"
-<head>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no'>
-    <link id='_ss' rel='stylesheet' type='text/css' href ='markdown.css' >
-    <script type='text/javascript' defer src='markdown.js'></script>
-</head>";
-
-            var body = @"
-<body>" +
-    CommonMarkConverter.Convert(Markdown) +
-"</body>";
-
-            Source = new HtmlWebViewSource { Html = "<html>" + head + body + "</html>", BaseUrl = _baseUrl };
-            */
-            // SetStylesheet();
-
             var assembly = typeof(App).GetTypeInfo().Assembly;
             Stream stream = assembly.GetManifestResourceStream("GUMIWA.Resources.index.html");
             stream.Position = 0;
             using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
             {
+                string pattern;
                 var html_text = reader.ReadToEnd();
-                string pattern = "<!--GUMIWA_Notes-->";
-                string result = Regex.Replace(html_text, pattern, CommonMarkConverter.Convert(Markdown));
-                Source = new HtmlWebViewSource { Html = result, BaseUrl = _baseUrl };
-                Debug.WriteLine($"{result}");
-            }
 
+                // Replace Notes
+                if(Markdown != null)
+                {
+                    pattern = GUMIWA_NOTES;
+                    html_text = Regex.Replace(html_text, pattern, CommonMarkConverter.Convert(Markdown));
+                }
+
+                // Replace JsonData
+                if(JsonData != null)
+                {
+                    pattern = GUMIWA_JSONDATA;
+                    html_text = Regex.Replace(html_text, pattern, JsonData);
+                }
+                Source = new HtmlWebViewSource { Html = html_text, BaseUrl = _baseUrl };
+                Debug.WriteLine($"{html_text}");
+            }
         }
 
         private void SetStylesheet()
